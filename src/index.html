@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Starter Kit</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="reservation__outer">
+        <div class="reservation">
+          <h1 class="h1">RESERVATIONS</h1>
+          <span class="description"
+            >We are able to take bookings for up to 5 people maximum online. For
+            groups of 6 people or more, please call us or send us an
+            email.</span
+          >
+          <form class = "form" action="submit">
+            <input required  class="dateInput" type="text" data-input="day" placeholder="Select a day*" />
+            <img src="./images/iconmonstr-calendar-4.svg" alt="" class="calendar">
+            <input required type="time" data-input="time" placeholder="Time*"/>
+            <img src="./images/clock.svg" alt="" class="clock">
+            <input required type="number"  data-input="peopleCount" placeholder="N of people*"/>
+            <img src="./images/multiple-users-silhouette.svg"
+             alt="" class="people">
+            <button class="submitBtn"></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

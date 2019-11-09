@@ -1,0 +1,157 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  background-image: url('images/bg-pattern.png');
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.reservation__outer{
+  width: 1057px;
+  height: 669px;
+  background-color: #f7dac6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation{
+  width: 1029px;
+  height: 640px;
+  border: solid 3px #5f4638;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1{
+  margin-top: 98px;
+  color: #5f4638;
+}
+
+.description{
+  display: block;
+  margin: 53px auto 0;
+  width: 795px;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: #5f4638;
+  margin-bottom: 130px;
+}
+
+.form{
+  width: 784px;
+  height: 217px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap ;
+  position: relative;
+}
+
+.form input{
+  background-color: #f7dac6;
+  display: block;
+  width: 376px;
+  height: 58px;
+  border: none;
+  color: #5f4638;
+  position: relative;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #5f4638;
+  padding-left: 40px;
+}
+.form button{
+  display: block;
+  background-color: #5f4638;
+  background-image: url('./images/formButton.png');
+  width: 356px;
+  height: 58px;
+  border: none;
+}
+.calendar{
+  position: absolute;
+  top: 16px;
+  left: 330px;
+  fill: #5f4638;
+}
+.form input:focus:invalid {
+  border: 1px solid red;
+}
+.form input:focus:valid {
+  border: 1px solid green;
+}
+.form input::placeholder {
+  padding-left: 40px;
+  color: #5f4638;
+}
+.dateInput{
+  position: relative;
+
+}
+
+.qs-datepicker-container{
+  border: 1px solid #5f4638 ;
+  width: 48%;
+}
+
+.qs-datepicker .qs-controls{
+  background-color: #f7dac6;
+}
+
+.qs-datepicker .qs-squares{
+  background-color: #f7dac6;
+}
+
+.qs-month-year{
+  color: #5f4638;
+}
+
+.qs-datepicker .qs-square.qs-day{
+  color: #5f4638;
+}
+
+.people{
+  position: absolute;
+  bottom: 60px;
+  left: 330px;
+  width: 32px;
+}
+
+.clock{
+  position: absolute;
+  width: 32px;
+  right: 10px;
+  top: 16px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
