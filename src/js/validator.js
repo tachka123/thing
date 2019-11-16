@@ -29,7 +29,7 @@ function submitForm(e) {
     });
     return;
   }
-  form.innerHTML = 'Success';
+  form.innerHTML = 'Success'; // тут будет логика отправки данных на сервер
 }
 
 function submitValidation() {
