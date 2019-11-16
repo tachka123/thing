@@ -22,7 +22,6 @@ body {
 .container{
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
@@ -33,6 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .reservation{
@@ -69,8 +69,10 @@ body {
   flex-wrap: wrap ;
   position: relative;
 }
-
-.form input{
+label{
+  position: relative;
+}
+.form label input{
   background-color: #f7dac6;
   display: block;
   width: 376px;
@@ -85,12 +87,45 @@ body {
   padding-left: 40px;
 }
 .form button{
-  display: block;
-  background-color: #5f4638;
-  background-image: url('./images/formButton.png');
+  display: flex;
   width: 356px;
   height: 58px;
   border: none;
+  justify-content: space-between;
+  background-color: inherit;
+  border-top: #5f4638 2px solid;
+  transition: all 1s;
+}
+.btnSideBox{
+  display: flex;
+  flex-wrap: wrap;
+  width: 15%;
+  height: 58px;
+}
+.btnSideBoxInner{
+  height: 50%;
+  width: 100%;
+  border-left: #5f4638 2px solid  ;
+  border-right: #5f4638 2px solid  ;
+}
+.btnSideBoxInner1{
+ border-bottom: #5f4638 2px solid;
+}
+
+
+.btnText{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+display: flex;
+  border-bottom: #5f4638 2px solid;
+  height: 58px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+.form button:hover{
+  opacity: 0.6;
 }
 .calendar{
   position: absolute;
@@ -98,11 +133,8 @@ body {
   left: 330px;
   fill: #5f4638;
 }
-.form input:focus:invalid {
-  border: 1px solid red;
-}
-.form input:focus:valid {
-  border: 1px solid green;
+.btnSideBoxInner2{
+  border-bottom: #5f4638 2px solid;
 }
 .form input::placeholder {
   padding-left: 40px;
@@ -113,9 +145,17 @@ body {
 
 }
 
+.required{
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: 14px;
+  color: red;
+}
 .qs-datepicker-container{
   border: 1px solid #5f4638 ;
-  width: 48%;
+  width: 100%;
 }
 
 .qs-datepicker .qs-controls{
