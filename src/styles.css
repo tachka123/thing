@@ -1,6 +1,4 @@
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +6,6 @@
 *::before,
 *::after {
   box-sizing: inherit;
-
 }
 
 body {
@@ -19,13 +16,13 @@ body {
   background-image: url('images/bg-pattern.png');
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   height: 100vh;
 }
 
-.reservation__outer{
+.reservation__outer {
   width: 1057px;
   height: 669px;
   background-color: #f7dac6;
@@ -35,7 +32,7 @@ body {
   margin: auto;
 }
 
-.reservation{
+.reservation {
   width: 1029px;
   height: 640px;
   border: solid 3px #5f4638;
@@ -46,12 +43,12 @@ body {
   align-items: center;
 }
 
-.h1{
+.h1 {
   margin-top: 98px;
   color: #5f4638;
 }
 
-.description{
+.description {
   display: block;
   margin: 53px auto 0;
   width: 795px;
@@ -61,18 +58,18 @@ body {
   margin-bottom: 130px;
 }
 
-.form{
+.form {
   width: 784px;
   height: 217px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   position: relative;
 }
-label{
+label {
   position: relative;
 }
-.form label input{
+.form label input {
   background-color: #f7dac6;
   display: block;
   width: 376px;
@@ -86,7 +83,7 @@ label{
   border-bottom: 1px solid #5f4638;
   padding-left: 40px;
 }
-.form button{
+.form button {
   display: flex;
   width: 356px;
   height: 58px;
@@ -96,56 +93,54 @@ label{
   border-top: #5f4638 2px solid;
   transition: all 1s;
 }
-.btnSideBox{
+.btnSideBox {
   display: flex;
   flex-wrap: wrap;
   width: 15%;
   height: 58px;
 }
-.btnSideBoxInner{
+.btnSideBoxInner {
   height: 50%;
   width: 100%;
-  border-left: #5f4638 2px solid  ;
-  border-right: #5f4638 2px solid  ;
+  border-left: #5f4638 2px solid;
+  border-right: #5f4638 2px solid;
 }
-.btnSideBoxInner1{
- border-bottom: #5f4638 2px solid;
+.btnSideBoxInner1 {
+  border-bottom: #5f4638 2px solid;
 }
 
-
-.btnText{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.btnText {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 24px;
-display: flex;
+  display: flex;
   border-bottom: #5f4638 2px solid;
   height: 58px;
   width: 100%;
   justify-content: center;
   align-items: center;
-
 }
-.form button:hover{
+.form button:hover {
   opacity: 0.6;
 }
-.calendar{
+.calendar {
   position: absolute;
   top: 16px;
   left: 330px;
   fill: #5f4638;
 }
-.btnSideBoxInner2{
+.btnSideBoxInner2 {
   border-bottom: #5f4638 2px solid;
 }
 .form input::placeholder {
   padding-left: 40px;
   color: #5f4638;
 }
-.dateInput{
+.dateInput {
   position: relative;
-
 }
 
-.required{
+.required {
   display: none;
   position: absolute;
   right: 0;
@@ -153,45 +148,44 @@ display: flex;
   font-size: 14px;
   color: red;
 }
-.qs-datepicker-container{
-  border: 1px solid #5f4638 ;
+.qs-datepicker-container {
+  border: 1px solid #5f4638;
   width: 100%;
 }
 
-.qs-datepicker .qs-controls{
+.qs-datepicker .qs-controls {
   background-color: #f7dac6;
 }
 
-.qs-datepicker .qs-squares{
+.qs-datepicker .qs-squares {
   background-color: #f7dac6;
 }
 
-.qs-month-year{
+.qs-month-year {
   color: #5f4638;
 }
 
-.qs-datepicker .qs-square.qs-day{
+.qs-datepicker .qs-square.qs-day {
   color: #5f4638;
 }
 
-.people{
+.people {
   position: absolute;
   bottom: 60px;
   left: 330px;
   width: 32px;
 }
 
-.clock{
+.clock {
   position: absolute;
   width: 32px;
   right: 10px;
   top: 16px;
 }
 
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
-    -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
